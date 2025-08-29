@@ -42,7 +42,6 @@ def build_demo():
                 qa_msg = gr.Textbox(placeholder="Ej: ...", label="Pregunta", lines=2, scale=4)
                 qa_btn = gr.Button("💬 Preguntar", variant="primary", scale=1)
 
-            # 👇 EXACTAMENTE 3 inputs y 3 outputs
             qa_btn.click(qa_respond, inputs=[qa_msg, qa_chat, sid], outputs=[qa_msg, qa_chat, sid])
             qa_msg.submit(qa_respond, inputs=[qa_msg, qa_chat, sid], outputs=[qa_msg, qa_chat, sid])
     return demo
