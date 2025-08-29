@@ -1,4 +1,3 @@
-# agents/relevance_checker.py
 from typing import List
 import os, re
 from ..retriever.builder import Document

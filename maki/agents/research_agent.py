@@ -1,4 +1,3 @@
-# agents/research_agent.py
 from typing import List, Dict
 from ..retriever.builder import Document
 import os
