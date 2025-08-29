@@ -34,7 +34,7 @@ def _openai_fallback_callable() -> Optional[Callable[[str], str]]:
             try:
                 prompt = (
                     "No encontré datos relevantes en el set local (gyms/clientes). "
-                    "Responde con conocimiento general en español, de forma breve y útil.\n\n"
+                    "Responde con conocimiento general en en el idioma que se mantenga la conversación, de forma breve y útil.\n\n"
                     f"Pregunta: {q}"
                 )
                 rsp = client.chat.completions.create(
