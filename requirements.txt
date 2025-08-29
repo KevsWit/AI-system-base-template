@@ -1,0 +1,18 @@
+# --- UI ---
+gradio
+
+# --- Orquestación (grafo) ---
+langgraph
+
+# --- Retriever híbrido ---
+rank-bm25
+numpy
+
+# --- LLMs (opcional: habilita clasificación/síntesis/verificación y fallback) ---
+openai
+
+# --- Utilidades ---
+python-dotenv
+
+# --- Tests (para ejecutar test_agent) ---
+pytest
