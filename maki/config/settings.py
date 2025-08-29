@@ -32,7 +32,7 @@ class Settings:
 
     # Logging
     LOG_LEVEL: str = os.getenv("LOG_LEVEL", "INFO").upper()
-    LOG_DIR: Path = Path(os.getenv("LOG_DIR", "./logs"))
+    LOG_DIR: Path = Path(os.getenv("LOG_DIR"))
     LOG_FILE: str = os.getenv("LOG_FILE", "maki.log")
     LOG_JSON: bool = os.getenv("LOG_JSON", "0").lower() in ("1", "true", "yes")
     LOG_MAX_MB: int = int(os.getenv("LOG_ROTATE_MB", "10"))
